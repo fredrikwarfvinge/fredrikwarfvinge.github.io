@@ -1,13 +1,14 @@
 ---
+layout: single
 title: "Rescue Vault from a broken raft setup"
 excerpt: "This is a simple demonstration of how to rescue HashiCorp Vault from a broken quorum from a bad setup."
 tags: 
   - vault
   - demo
-link: https://github.com/fredrikwarfvinge/demos-vault-raft-lost-quorum
 ---
 # Rescue Vault from a broken raft setup
 
+All code can be found on [GitHub](https://github.com/fredrikwarfvinge/demos-vault-raft-lost-quorum)
 This is a simple demonstration of how to rescue Vault from a broken quorum from a bad setup (2 nodes) and finally what happens if you are following the suggested 3 or more node setup and one node fails.
 
 This repo contains the code required for setting up a cluster using HashiCorp Vagrant. 
