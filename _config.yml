@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Fredrik Warfvinge Tech Blog
+title: Fredrik Warfvinge the Tech Viking
 email: webmaster@atnaszurc.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a blog page where I share some tech updates based on speeches
@@ -27,15 +27,114 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.zurc.it" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  fredrikwarfvinge
+repository: fredrikwarfvinge/fredrikwarfvinge.github.io
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
 
 minimal_mistakes_skin: "dark" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+
+# Site Author
+author:
+  name             : "Fredrik Warfvinge"
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "Love learning new things and sharing them with people"
+  location         : "Stockholm, Sweden"
+  links:
+    - label: "Your Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://your-site.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/"
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: Europe/Stockholm # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Liquid
+strict_front_matter: true
+liquid:
+  error_mode: strict
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:path/
+  pets:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: false
+      toc: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
