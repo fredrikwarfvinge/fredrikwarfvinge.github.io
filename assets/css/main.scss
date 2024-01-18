@@ -8,6 +8,8 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-.toc {
-    position: fixed;
+@media (min-width: 64em){
+    .toc {
+        position: fixed;
+    }
 }
