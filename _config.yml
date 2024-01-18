@@ -45,21 +45,18 @@ minimal_mistakes_skin: "dark" # "default", "air", "aqua", "contrast", "dark", "d
 author:
   name             : "Fredrik Warfvinge"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Love learning new things and sharing them with people"
+  bio              : "IT Consultant working a lot with the HashiCorp Stack, Ansible, Kubernetes and secure automation. Love learning new things and sharing them with people"
   location         : "Stockholm, Sweden"
   links:
-    - label: "Your Website"
+    - label: "This blog"
       icon: "fas fa-fw fa-link"
-      url: "https://your-site.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://blog.zurc.it"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/fredrikwarfvinge"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://github.com/fredrikwarfvinge"
 
 # Outputting
 permalink: /:categories/:title/
