@@ -5,6 +5,7 @@ tags:
   - vault
 ---
 This is a simple post about how to ensure your admin's cannot escalate their access within HashiCorp Vault. 
+This is not a problem with Vault itself, rather it showcases how important it is to understand policies within Vault, and ensure that you don't hand out too much access when not needed. 
 
 ## The Problem
 
