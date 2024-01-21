@@ -4,10 +4,7 @@ excerpt: "This is an example of how a misconfigured policy editor can cause esca
 tags: 
   - vault
 ---
-
-# Vault policy mistake can lead to escalation of privilege
-
-This is a simple talk about how to ensure your admin's cannot escalate their access within HashiCorp Vault. 
+This is a simple post about how to ensure your admin's cannot escalate their access within HashiCorp Vault. 
 
 ## The Problem
 

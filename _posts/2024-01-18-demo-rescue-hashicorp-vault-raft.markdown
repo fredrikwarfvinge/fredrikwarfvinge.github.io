@@ -5,8 +5,6 @@ tags:
   - vault
   - demo
 ---
-# Rescue Vault from a broken raft setup
-
 All code can be found on [GitHub](https://github.com/fredrikwarfvinge/demos-vault-raft-lost-quorum){:target="_blank"}
 
 This is a simple demonstration of how to rescue Vault from a broken quorum from a bad setup (2 nodes) and finally what happens if you are following the suggested 3 or more node setup and one node fails.
